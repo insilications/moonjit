@@ -1,8 +1,8 @@
+libluajit-5.1.so.2:lj_str_hash_default
 libluajit-5.1.so.2:luaJIT_profile_dumpstack
 libluajit-5.1.so.2:luaJIT_profile_start
 libluajit-5.1.so.2:luaJIT_profile_stop
 libluajit-5.1.so.2:luaJIT_setmode
-libluajit-5.1.so.2:luaJIT_version_2_1_0_beta3
 libluajit-5.1.so.2:luaL_addlstring
 libluajit-5.1.so.2:luaL_addstring
 libluajit-5.1.so.2:luaL_addvalue
@@ -22,7 +22,9 @@ libluajit-5.1.so.2:luaL_execresult
 libluajit-5.1.so.2:luaL_fileresult
 libluajit-5.1.so.2:luaL_findtable
 libluajit-5.1.so.2:luaL_getmetafield
+libluajit-5.1.so.2:luaL_getsubtable
 libluajit-5.1.so.2:luaL_gsub
+libluajit-5.1.so.2:luaL_len
 libluajit-5.1.so.2:luaL_loadbuffer
 libluajit-5.1.so.2:luaL_loadbufferx
 libluajit-5.1.so.2:luaL_loadfile
@@ -38,15 +40,19 @@ libluajit-5.1.so.2:luaL_optnumber
 libluajit-5.1.so.2:luaL_prepbuffer
 libluajit-5.1.so.2:luaL_pushmodule
 libluajit-5.1.so.2:luaL_pushresult
+libluajit-5.1.so.2:luaL_pushresultsize
 libluajit-5.1.so.2:luaL_ref
 libluajit-5.1.so.2:luaL_register
+libluajit-5.1.so.2:luaL_requiref
 libluajit-5.1.so.2:luaL_setfuncs
 libluajit-5.1.so.2:luaL_setmetatable
 libluajit-5.1.so.2:luaL_testudata
+libluajit-5.1.so.2:luaL_tolstring
 libluajit-5.1.so.2:luaL_traceback
 libluajit-5.1.so.2:luaL_typerror
 libluajit-5.1.so.2:luaL_unref
 libluajit-5.1.so.2:luaL_where
+libluajit-5.1.so.2:lua_absindex
 libluajit-5.1.so.2:lua_atpanic
 libluajit-5.1.so.2:lua_call
 libluajit-5.1.so.2:lua_checkstack
@@ -60,6 +66,7 @@ libluajit-5.1.so.2:lua_equal
 libluajit-5.1.so.2:lua_error
 libluajit-5.1.so.2:lua_gc
 libluajit-5.1.so.2:lua_getallocf
+libluajit-5.1.so.2:lua_getexdata
 libluajit-5.1.so.2:lua_getfenv
 libluajit-5.1.so.2:lua_getfield
 libluajit-5.1.so.2:lua_gethook
@@ -78,6 +85,7 @@ libluajit-5.1.so.2:lua_isnumber
 libluajit-5.1.so.2:lua_isstring
 libluajit-5.1.so.2:lua_isuserdata
 libluajit-5.1.so.2:lua_isyieldable
+libluajit-5.1.so.2:lua_len
 libluajit-5.1.so.2:lua_lessthan
 libluajit-5.1.so.2:lua_load
 libluajit-5.1.so.2:lua_loadx
@@ -102,12 +110,14 @@ libluajit-5.1.so.2:lua_pushvfstring
 libluajit-5.1.so.2:lua_rawequal
 libluajit-5.1.so.2:lua_rawget
 libluajit-5.1.so.2:lua_rawgeti
+libluajit-5.1.so.2:lua_rawlen
 libluajit-5.1.so.2:lua_rawset
 libluajit-5.1.so.2:lua_rawseti
 libluajit-5.1.so.2:lua_remove
 libluajit-5.1.so.2:lua_replace
 libluajit-5.1.so.2:lua_resume
 libluajit-5.1.so.2:lua_setallocf
+libluajit-5.1.so.2:lua_setexdata
 libluajit-5.1.so.2:lua_setfenv
 libluajit-5.1.so.2:lua_setfield
 libluajit-5.1.so.2:lua_sethook
@@ -145,3 +155,6 @@ libluajit-5.1.so.2:luaopen_os
 libluajit-5.1.so.2:luaopen_package
 libluajit-5.1.so.2:luaopen_string
 libluajit-5.1.so.2:luaopen_table
+libluajit-5.1.so.2:luaopen_utf8
+libluajit-5.1.so.2:moonjit_version_2_2_0
+libluajit-5.1.so.2:recff_thread_exdata
