@@ -5,7 +5,7 @@
 %define keepstatic 1
 Name     : moonjit
 Version  : 2.2.0
-Release  : 14
+Release  : 15
 URL      : file:///insilications/build/clearlinux/packages/moonjit/moonjit-2.2.0.tar.gz
 Source0  : file:///insilications/build/clearlinux/packages/moonjit/moonjit-2.2.0.tar.gz
 Summary  : Just-in-time compiler for Lua
@@ -82,8 +82,8 @@ staticdev components for the moonjit package.
 
 
 %prep
-%setup -q -n clone_archive
-cd %{_builddir}/clone_archive
+%setup -q -n moonjit
+cd %{_builddir}/moonjit
 %patch1 -p1
 
 %build
@@ -91,7 +91,7 @@ unset http_proxy
 unset https_proxy
 unset no_proxy
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1598694252
+export SOURCE_DATE_EPOCH=1599406306
 export GCC_IGNORE_WERROR=1
 ## altflags_pgo content
 ## pgo generate
@@ -119,6 +119,9 @@ export NM=gcc-nm
 # export CCACHE_SLOPPINESS=pch_defines,locale,time_macros
 # export CCACHE_DISABLE=1
 ## altflags_pgo end
+##
+%define _lto_cflags 1
+##
 export CFLAGS="${CFLAGS_GENERATE}"
 export CXXFLAGS="${CXXFLAGS_GENERATE}"
 export FFLAGS="${FFLAGS_GENERATE}"
@@ -145,7 +148,7 @@ unset no_proxy
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1598694252
+export SOURCE_DATE_EPOCH=1599406306
 rm -rf %{buildroot}
 %make_install MULTILIB=lib64
 ## install_append content
