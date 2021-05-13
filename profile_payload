@@ -1,0 +1,2 @@
+make check || :
+make CFLAGS="${CFLAGS_GENERATE}" LDFLAGS="${LDFLAGS_GENERATE}" BENCH_DURATION=4 bench || :
